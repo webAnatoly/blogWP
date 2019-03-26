@@ -1,0 +1,18 @@
+@import './fonts/fonts';
+@import './scss/vendors/normalize';
+@import './scss/variables';
+@import './scss/base';
+@import './scss/helpers';
+@import './scss/typography';
+@import './scss/abstracts';
+
+@import './scss/layout/grid';
+@import './scss/layout/wrapper';
+@import './scss/layout/header';
+@import './scss/layout/footer';
+
+@import './pages/home';
+@import './pages/reviews';
+@import './pages/small-reviews';
+
+@import './components/buttons/btn-rect/btn-rect';

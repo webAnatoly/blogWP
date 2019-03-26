@@ -1,0 +1,19 @@
+.header {
+  border: 1px solid blue;
+  width: 100%;
+  min-height: 10.3rem;
+  background-color: $color-light;
+
+  &__body {
+    width: $layout-width;
+    min-height: inherit;
+    margin: auto;
+
+    @media (max-width: $tab-land) {
+      width: 100%;
+    }
+    @media (max-width: $phone) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.wrapper {
+  width: $layout-width;
+  min-height: 100vh;
+  margin: auto;
+  border: 1px solid red;
+
+  @media (max-width: $tab-land) {
+    width: 100%;
+  }
+  @media (max-width: $phone) {
+    width: 100%;
+  }
+}
