@@ -8,9 +8,12 @@ html(lang="ru")
   body.home
     header.header
       .header__body
+        include ../components/logo/logo.pug
+        +logo()
         p header
     .wrapper.home__wrapper
     footer.footer
       .footer__body
+        +logo()
         p footer
     script(src='./js/main.js')

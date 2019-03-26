@@ -1,0 +1,31 @@
+.logo {
+  width: 15rem;
+  height: 3.9rem;
+  text-transform: uppercase;
+  padding: .5rem 0 .5rem 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 2px solid $color-second;
+    border-right: 2px solid transparent;
+    width: 7.5rem;
+    height: 3.9rem;
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-size: 2.1rem;
+  }
+
+  &__text--colored {
+    color: $color-second;
+  }
+
+}
