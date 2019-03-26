@@ -3,12 +3,12 @@
   width: 100%;
   min-height: 10.3rem;
   background-color: $color-light;
-  padding: 0 0 0 1.5rem;
 
   &__body {
     width: $layout-width;
     min-height: inherit;
     margin: auto;
+    padding: 0 0 0 1.5rem;
 
     @media (max-width: $tab-land) {
       width: 100%;
