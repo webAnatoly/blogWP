@@ -1,10 +1,9 @@
 body {
-  font-size: 1.6rem;
+  font-size: $font-size-regular;
   font-family: $font-family;
 }
 
 h2 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
+  font-size: $font-size-h2;
   font-family: $font-family;
 }
