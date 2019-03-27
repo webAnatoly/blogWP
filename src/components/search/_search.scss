@@ -1,0 +1,34 @@
+.search {
+  width: 9.7rem;
+  height: 3.3rem;
+  border-radius: 4px;
+  background-color: $color-bg;
+  position: relative;
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: .2rem .2rem .2rem 3.5rem;
+    border: none;
+    outline: none;
+    appearance: none;
+
+    // & ::placeholder {
+    //   color: red;
+    // }
+  }
+
+  &__submit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3.3rem;
+    height: 3.3rem;
+    cursor: pointer;
+    background: transparent url('../../img/icon-search.svg') no-repeat center / 1.6rem;
+    border: none;
+    outline: none;
+    appearance: none;
+  }
+}
