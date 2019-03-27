@@ -18,6 +18,16 @@
   }
 }
 
+.row--big {
+  min-height: 100vh;
+  border: 1px solid blue;
+
+  @media only screen and (max-width: $phone) {
+    display: block;
+    min-height: 50vh;
+  }
+}
+
 // gutters
 .row:not(:last-child) {
   margin-bottom: $gutter-vertical-none;
@@ -25,6 +35,9 @@
 
 div[class^="col-"]:not(:last-child) {
   margin-right: $gutter-horizontal-none;
+}
+div[class^="col-big"]:not(:last-child) {
+  margin-right: $gutter-horizontal--small;
 }
 
 
@@ -76,6 +89,18 @@ div[class^="col-"]:not(:last-child) {
   width: 100%;
 }
 
+.col-big {
+  width: 88rem;
+  min-height: inherit;
+  border: 1px dashed green;
+}
+
+.col-small {
+  width: 26.2rem;
+  min-height: inherit;
+  border: 1px dashed green;
+}
+
 .col-1,
 .col-2,
 .col-3,
@@ -87,7 +112,9 @@ div[class^="col-"]:not(:last-child) {
 .col-9,
 .col-10,
 .col-11,
-.col-12 {
+.col-12,
+.col-big,
+.col-small {
   min-height: inherit;
   padding: 0;
   margin: 0;
