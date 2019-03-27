@@ -12,11 +12,17 @@
 
     & .nav-li {
       display: inline-block;
+      position: relative;
       font-size: 1.4rem;
       border: 1px solid red;
+      cursor: pointer;
 
       &:not(:last-child) {
         margin-right: 3rem;
+      }
+
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -46,4 +52,30 @@
         stroke: $color-main;
       }
     }
+}
+
+.dropdown-menu {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  border: 1px dashed green;
+  left: auto;
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+
+  &-item {
+    display: block;
+    color: blue;
+  }
+
+  &--hidden {
+    left: auto;
+    opacity: 0;
+    top: 100%;
+    visibility: hidden;
+  }
 }
