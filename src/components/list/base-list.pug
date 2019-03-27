@@ -1,0 +1,19 @@
+mixin base-list(opt)
+  - 
+    var cssClass = ""; // css класс для позиционирования списка в том месте в котором данный список вставляется. 
+    if (opt && opt.cssClass) {
+      cssClass = opt.cssClass;
+    }
+  - if (opt && opt.orderedLists) {
+    ol.base-list.base-list__ol(class=cssClass)
+      - for (var i = 0; i < opt.orderedLists.length; i += 1) {
+          li.base-list__ol-li= opt.orderedLists[i]
+            div.base-list__ol-number= (i + 1)
+      - }
+  - } else if (opt && opt.decor === true) {
+    ul.base-list.base-list__ul.base-list__ul--border-li(class=cssClass)
+      block
+  - } else {
+    ul.base-list.base-list__ul(class=cssClass)
+      block
+  - }
