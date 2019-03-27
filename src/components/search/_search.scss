@@ -14,9 +14,9 @@
     outline: none;
     appearance: none;
 
-    // & ::placeholder {
-    //   color: red;
-    // }
+    &::placeholder {
+      color: $color-main;
+    }
   }
 
   &__submit {
