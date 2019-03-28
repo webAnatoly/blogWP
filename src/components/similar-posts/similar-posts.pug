@@ -1,0 +1,15 @@
+mixin similar-posts(opt)
+  .similar-posts(class=(opt ? opt.classes : ''))
+    .similar-posts__title-bar
+      span.similar-posts__title Похожие статьи
+      .similar-posts__menu
+        .similar-posts__btn-left(id="similarPostsBtnLeft" tabindex="0" role="button" onclick="console.log('test')")
+          img(src=require("../img/icons/left-arrow.svg"), alt="left button icon")
+        .similar-posts__btn-right(id="similarPostsBtnRight" tabindex="0" role="button" onclick="console.log('test')")
+          img(src=require("../img/icons/right-arrow.svg"), alt="right button icon")
+    .similar-posts__row
+      include ../../components/card/card.pug
+      - var img = require('../img/picture-m2.png')
+      +card({text: 'Сколько зарабатывают звезды в социальных сетях + как заработать обычным пользователям', img: img})
+      +card({text: 'Сколько зарабатывают звезды в социальных сетях + как заработать обычным пользователям2', img: img})
+      +card({text: 'Сколько зарабатывают звезды в социальных сетях + как заработать обычным пользователям3', img: img})

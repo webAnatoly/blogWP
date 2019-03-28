@@ -24,7 +24,7 @@ html(lang="ru")
               +informer({date: '20.03.2019', author: 'Дмитрий Алексеев', rubric: 'Заработок в интернете', cssClass: 'content-group__informer'})
               .content-group__img-holder
                 img(src=require("../img/picture.png"), alt="picture")
-              section.synopsis
+              .synopsis
                 span.synopsis__title Содержание
                 include ../components/list/base-list.pug
                 +base-list({decor: true})
@@ -60,9 +60,12 @@ html(lang="ru")
           include ../components/share-post/share-post.pug
           +share-post({classes: "square home-page__share-post"})
 
-          section.square.similar-posts.home-page__similar-posts Похожие статьи
+          include ../components/similar-posts/similar-posts.pug
+          +similar-posts({classes: "square home-page__similar-posts"})
+
           section.square.comments-section Комментарии
             //- include add-comment-form
+            h2 asdfsdf
 
 
         .col-small

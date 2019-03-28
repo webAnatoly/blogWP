@@ -1,0 +1,7 @@
+mixin card(opt)
+  .card(class= opt ? opt.classes : '')
+    .card__img-holder
+      img.card__img(src=(opt ? opt.img : ''), alt='picture')
+    .card__text= opt ? opt.text : ''
+    include ../../components/informer/informer.pug
+    +informer()
