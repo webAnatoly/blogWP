@@ -57,7 +57,12 @@ html(lang="ru")
               p
                 span Следующая статья:
                 | Как подключиться к Яндекс Такси напрямую и зарабатывать на своем авто + можно ли работать без лицензии на перевозку пассажиров
+          include ../components/share-post/share-post.pug
+          +share-post({classes: "square home-page__share-post"})
 
+          section.square.similar-posts.home-page__similar-posts Похожие статьи
+          section.square.comments-section Комментарии
+            //- include add-comment-form
 
 
         .col-small
