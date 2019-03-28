@@ -1,0 +1,14 @@
+.content-group {
+
+
+  &__img-holder {
+    width: 100%;
+    min-height: 20rem;
+    overflow: hidden;
+
+    & img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}

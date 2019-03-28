@@ -22,7 +22,8 @@ html(lang="ru")
               h2 Сколько зарабатывают звезды в социальных сетях + как заработать обычным пользователям
               include ../components/informer/informer.pug
               +informer({date: '20.03.2019', author: 'Дмитрий Алексеев', rubric: 'Заработок в интернете'})
-              img(src="", alt="picture")
+              .content-group__img-holder
+                img(src=require("../img/picture.png"), alt="picture")
               p Содержание
               include ../components/list/base-list.pug
               +base-list({decor: true})
