@@ -3,7 +3,40 @@ body {
   font-family: $font-family;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family--bold;
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
 h2 {
   font-size: $font-size-h2;
-  font-family: $font-family;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+p {
+  line-height: $line-height;
+}
+
+blockquote {
+  line-height: $line-height;
+  font-family: $font-family--italic;
+  position: relative;
+  padding-left: 1rem;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 100%;
+    width: 3px;
+    background-color: $color-second;
+  }
 }

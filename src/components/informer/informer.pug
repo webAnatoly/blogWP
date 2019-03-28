@@ -1,0 +1,31 @@
+//- Отображает кол-во просмотров, кол-во комментов. Если в opt переданы дата, автор, рубрика, то их тоже отображает.
+mixin informer(opt)
+
+  .informer(class= opt ? opt.cssClass : "")
+    .informer__col
+      - if (opt) {
+      -  if (opt.date) {
+          .informer__date= opt.date
+      -  }
+      - }
+      
+      .informer__icon-holder
+        img.informer__icon(src=require("../img/icons/icon-eye.svg"), alt="", srcset="")
+      .informer__v-count 117
+
+      .informer__icon-holder
+        img.informer__icon(src=require("../img/icons/balloon.svg"), alt="", srcset="")
+      .informer__c-count 34
+
+    - if (opt) {
+    -  if (opt.author || opt.rubric) {
+        .informer__col
+          -  if (opt.author) {
+            .informer__author= 'Автор: ' + opt.author
+          -  }
+          -  if (opt.rubric) {
+            .informer__rubric= 'Рубрика: ' + opt.rubric
+          -  }
+    -  }
+    - }
+

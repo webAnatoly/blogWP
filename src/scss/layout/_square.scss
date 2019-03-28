@@ -1,0 +1,18 @@
+.square {
+  background-color: $color-light;
+  padding: 3rem 1.5rem;
+
+  @media (max-width: $tab-land) {
+    padding: 2rem .5rem;
+  }
+
+  @media (max-width: $phone) {
+    padding: 1rem .2rem;
+  }
+}
+.square--small {
+  background-color: $color-light;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  min-height: 15rem;
+}
