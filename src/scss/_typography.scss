@@ -23,6 +23,20 @@ p {
   line-height: $line-height;
 }
 
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+  color: $color-main;
+  border: 1px solid transparent;
+  padding-bottom: 2px;
+
+  &:hover {
+    border-bottom: 1px solid $color-second;
+  }
+}
+
 blockquote {
   line-height: $line-height;
   font-family: $font-family--italic;

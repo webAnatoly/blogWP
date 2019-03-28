@@ -1,6 +1,10 @@
 .content-group {
 
 
+  &__informer { // здесь только позиционированиие и внешние отступы для informer
+    margin: 2rem 0 3rem 0;
+  }
+
   &__img-holder {
     width: 100%;
     min-height: 20rem;
@@ -9,6 +13,32 @@
     & img {
       display: block;
       max-width: 100%;
+    }
+  }
+
+  & .synopsis {
+    border: 1px solid $color-second;
+    max-width: 65.5rem;
+    min-height: 15rem;
+    padding: 3rem 1rem 2.2rem 3rem;
+    margin-top: 3rem;
+
+    &__title {
+      display: block;
+      font-family: $font-family--bold;
+      font-size: $font-size-bigger;
+      margin-bottom: 1.5rem;
+    }
+
+    & a,
+    & a:link,
+    & a:visited {
+      border: 1px solid transparent;
+      padding-bottom: 2px;
+
+      &:hover {
+        border-bottom: 1px solid $grey-2;
+      }
     }
   }
 }

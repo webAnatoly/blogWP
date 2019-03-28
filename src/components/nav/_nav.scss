@@ -33,6 +33,10 @@
   display: block;
   min-width: 5rem;
 
+  &:hover {
+    color: $color-main;
+  }
+
   &__arrow {
     display: inline-block;
     width: 1.45rem;
@@ -51,9 +55,9 @@
     transform: rotate(180deg);
 
     & .svg-nav-arrow__path {
-        stroke: $color-main;
-      }
+      stroke: $color-main;
     }
+  }
 }
 
 .dropdown-menu {
