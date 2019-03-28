@@ -1,5 +1,15 @@
 .content-group {
 
+  & a,
+  & a:link,
+  & a:visited {
+    border: 1px solid transparent;
+    padding-bottom: 2px;
+
+    &:hover {
+      border-bottom: 1px solid $grey-2;
+    }
+  }
 
   &__informer { // здесь только позиционированиие и внешние отступы для informer
     margin: 2rem 0 3rem 0;
@@ -30,15 +40,38 @@
       margin-bottom: 1.5rem;
     }
 
-    & a,
-    & a:link,
-    & a:visited {
-      border: 1px solid transparent;
-      padding-bottom: 2px;
+  }
 
-      &:hover {
-        border-bottom: 1px solid $grey-2;
-      }
-    }
+  &__footer {
+    border: 1px solid $color-second;
+    min-height: 5rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+}
+
+.main {
+
+  &__h3 {
+    margin-top: 2.7rem;
+  }
+
+  &__h4 {
+    margin-bottom: 2.5rem;
+  }
+
+  &__p {
+    margin: 2.3rem 0;
+  }
+
+  &__blockquote {
+    margin-left: 8.2rem;
+  }
+
+  &__ul {
+    margin-left: 8.2rem;
+  }
+
+  &__ol {
+    margin-left: 8.2rem;
   }
 }
