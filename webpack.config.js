@@ -11,7 +11,7 @@ module.exports = function(env, options) {
     output: {
       path: path.resolve(__dirname, './dist'),
       filename: 'js/[name].js',
-      publicPath: '/'
+      publicPath: isDevMode ? '/' : './',
     },
     devServer: {
       overlay: true,

@@ -2,7 +2,6 @@
   min-height: 38.3rem;
 
   &__title-bar {
-    border: 1px dashed red;
     min-height: 3rem;
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +13,6 @@
     }
 
     & .similar-posts__menu {
-      border: 1px solid red;
       width: 5.6rem;
       height: 2.1rem;
       margin-left: auto;
@@ -41,7 +39,6 @@
   &__row {
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
-    height: 32.2rem;
+    height: 30rem;
   }
 }
