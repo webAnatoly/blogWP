@@ -15,7 +15,7 @@ html(lang="ru")
     .wrapper.home__wrapper
       include ../components/breadcrumb/breadcrumb.pug
       h1.visually-hidden Блог ProfitFast
-      .row.row--big
+      .row.row--big.home-page__row
         .col-big
           div.content-group.square
             header.content-group__header
@@ -63,9 +63,8 @@ html(lang="ru")
           include ../components/similar-posts/similar-posts.pug
           +similar-posts({classes: "square home-page__similar-posts"})
 
-          section.square.comments-section Комментарии
-            //- include add-comment-form
-            h2 asdfsdf
+          include ../components/comment-section/comment-section.pug
+          +comment-section({classes: "home-page__comment-section"})
 
 
         .col-small

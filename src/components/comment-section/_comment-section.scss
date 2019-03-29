@@ -1,0 +1,124 @@
+.comment-section {
+  width: 100%;
+  min-height: 22rem;
+
+  &__title {
+    font-size: $font-size-l;
+    padding-bottom: 2.5rem;
+  }
+
+  &__comment-wrapper {
+    width: 100%;
+    padding-left: 8.8rem;
+    padding-bottom: 2.7rem;
+  
+    & .comment-section__comment-body {
+      position: relative;
+      padding-bottom: 1rem;
+
+      & .comment-section__icon-holder {
+        width: 6.9rem;
+        height: 6.9rem;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: -8.9rem;
+        overflow: hidden;
+        background-color: $grey-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .comment-section__img {
+          width: 100%;
+          height: 100%;
+          border-radius: 3px;
+          border: none;
+        }
+      }
+  
+      & .comment-section__author {
+        font-size: $font-size-small;
+        padding-right: 2rem;
+      }
+  
+      & .comment-section__date {
+        font-size: $font-size-small;
+      }
+  
+      & .comment-section__text {
+        font-size: $font-size-regular;
+        line-height: 2rem;
+        margin: 1.2rem 0 2rem 0;
+      }
+  
+      & .comment-section__answer {
+        font-size: $font-size-small;
+      }
+    }
+  }
+
+  // отступы для блоков с комментариями
+  &__indent-double {
+    padding-left: calc(8.8rem * 2);
+
+    @media (max-width: $tab-port) {
+      padding-left: calc(8.8rem + (2rem * 2));
+    }
+  }
+  &__indent-triple {
+    padding-left: calc(8.8rem * 3);
+
+    @media (max-width: $tab-port) {
+      padding-left: calc(8.8rem + (2rem * 3));
+    }
+  }
+  &__indent-four {
+    padding-left: calc(8.8rem * 4);
+
+    @media (max-width: $tab-port) {
+      padding-left: calc(8.8rem + (2rem * 4));
+    }
+  }
+  &__indent-five {
+    padding-left: calc(8.8rem * 5);
+
+    @media (max-width: $tab-port) {
+      padding-left: calc(8.8rem + (2rem * 5));
+    }
+  }
+}
+
+
+.comment-form {
+  border: 1px solid blue;
+  width: 57.5rem;
+  min-height: 24.8rem;
+
+  @media (max-width: $phone) {
+    width: 100%;
+    padding: .5rem;
+  }
+
+  &__textarea {
+    display: block;
+    width: 100%;
+    min-height: 9.6rem;
+    border: 1px solid $grey-2;
+    padding: 1.5rem 1.7rem;
+    font-size: 1.4rem;
+    background: none;
+    resize: none;
+  }
+}
+
+// позиционирование формы внутри .comment-section
+.comment-section__comment-form {
+  margin-left: 8.8rem;
+
+  @media (max-width: $phone) {
+    width: 100%;
+    padding: .5rem;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,50 @@
+mixin comment-section(opt)
+  section.square.comment-section(class= opt ? opt.classes : '')
+    h2.comment-section__title Комментарии 
+      |
+      span.comment-section__count-comments (04)
+
+    .comment-section__comment-wrapper
+      .comment-section__comment-body
+        .comment-section__icon-holder
+          img(src=require('../img/avatar.png'), alt="user icon").comment-section__img
+        span.comment-section__author Иван Иванов
+        span.comment-section__date 20.03.2019
+        p.comment-section__text Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+        a.comment-section__answer Ответить
+   
+    form.comment-form.comment-section__comment-form(id="addCommentForm", name="addCommentForm", method="POST", onsubmit="alert('заглушка');return false")
+      input(type="text", name="userName").comment-form__input
+      input(type="email", name="userEmail").comment-form__email
+      textarea(name="comment", cols="30", rows="4", placeholder="Комментарий", id="commentFormTextarea").comment-form__textarea
+      button(type="submit") Отправить
+      button(type="button") Отменить ответ
+
+    .comment-section__comment-wrapper
+      .comment-section__comment-body
+        .comment-section__icon-holder
+          img(src=require('../img/avatar.png'), alt="user icon").comment-section__img
+        span.comment-section__author Иван Иванов
+        span.comment-section__date 20.03.2019
+        p.comment-section__text Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+        a.comment-section__answer Ответить
+
+    .comment-section__comment-wrapper.comment-section__indent-double
+      .comment-section__comment-body
+        .comment-section__icon-holder
+          img(src=require('../img/avatar.png'), alt="user icon").comment-section__img
+        span.comment-section__author Иван Иванов
+        span.comment-section__date 20.03.2019
+        p.comment-section__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eius rerum animi error distinctio quo totam corporis? Sapiente aperiam, odit debitis asperiores hic voluptate aliquam laudantium earum. Saepe commodi minima voluptas ipsam optio. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+        a.comment-section__answer Ответить
+
+    .comment-section__comment-wrapper
+      .comment-section__comment-body
+        .comment-section__icon-holder
+          img(src=require('../img/avatar.png'), alt="user icon").comment-section__img
+        span.comment-section__author Иван Иванов
+        span.comment-section__date 20.03.2019
+        p.comment-section__text Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+        a.comment-section__answer Ответить
+
+  
