@@ -36,9 +36,23 @@
     }
   }
 
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    height: 30rem;
+  &__slider-container {
+    height: 31rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  
+    & .similar-posts__row { // этот ряд будет смещаться по клику
+      display: flex;
+      justify-content: flex-start;
+      height: 30rem;
+      width: 111111px;
+      position: absolute;
+      left: 0;
+
+      & div {
+        margin-right: 2.9rem;
+      }
+    }
   }
 }
