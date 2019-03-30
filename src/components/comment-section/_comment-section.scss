@@ -91,14 +91,21 @@
 
 // форма ввода комментариев
 .comment-form {
-  border: 1px solid blue;
   width: 57.5rem;
   min-height: 24.8rem;
   padding-bottom: 2.9rem;
+  border: 1px solid transparent;
+
+  @media (max-width: $tab-port) {
+    // width: 50rem;
+    padding-right: 1rem;
+    margin-bottom: 2.9rem;
+  }
 
   @media (max-width: $phone) {
     width: 100%;
     padding: .5rem;
+    margin-bottom: 2.9rem;
   }
 
   &__input {
