@@ -59,4 +59,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
   textarea.addEventListener('blur', (e) => {
     e.target.style.border = '1px solid #d9d9d9';
   });
+
+  // подсветка инпутов при фокусе
+  const commentForm = document.getElementById('addCommentForm');
+  commentForm.userName.addEventListener('focus', (e) => {
+    e.target.style.border = '1px solid #ffcf34';
+  });
+  commentForm.userName.addEventListener('blur', (e) => {
+    e.target.style.border = '1px solid #d9d9d9';
+  });
+  commentForm.userEmail.addEventListener('focus', (e) => {
+    e.target.style.border = '1px solid #ffcf34';
+  });
+  commentForm.userEmail.addEventListener('blur', (e) => {
+    e.target.style.border = '1px solid #d9d9d9';
+  });
 });

@@ -89,15 +89,43 @@
   }
 }
 
-
+// форма ввода комментариев
 .comment-form {
   border: 1px solid blue;
   width: 57.5rem;
   min-height: 24.8rem;
+  padding-bottom: 2.9rem;
 
   @media (max-width: $phone) {
     width: 100%;
     padding: .5rem;
+  }
+
+  &__input {
+    display: inline-block;
+    width: 28rem;
+    height: 4.7rem;
+    background: transparent;
+    border: 1px solid $grey-2;
+    padding-left: 1.7rem;
+
+    &::placeholder {
+      color: $color-main;
+    }
+
+    @media (max-width: $phone) {
+      display: block;
+      margin: auto;
+      width: 90%;
+    }
+  }
+
+  &__input-text {
+    
+  }
+
+  &__email {
+
   }
 
   &__textarea {
@@ -109,6 +137,34 @@
     font-size: 1.4rem;
     background: none;
     resize: none;
+    margin: 1.5rem 0;
+
+    @media (max-width: $phone) {
+      margin: 1.5rem auto;
+      width: 90%;
+    }
+
+    &::placeholder {
+      color: $color-main;
+    }
+
+  }
+
+  &__submit {
+
+    &:hover {
+      border: 1px solid $color-second;
+      color: $color-second;
+    }
+  }
+
+  &__cancel {
+
+
+    &:hover {
+      border: 1px solid $color-second;
+      color: $color-second;
+    }
   }
 }
 

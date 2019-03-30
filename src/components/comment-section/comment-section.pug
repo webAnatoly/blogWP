@@ -14,11 +14,13 @@ mixin comment-section(opt)
         a.comment-section__answer Ответить
    
     form.comment-form.comment-section__comment-form(id="addCommentForm", name="addCommentForm", method="POST", onsubmit="alert('заглушка');return false")
-      input(type="text", name="userName").comment-form__input
-      input(type="email", name="userEmail").comment-form__email
+      .row
+        input(type="text", name="userName", placeholder="Имя*").comment-form__input.comment-form__input-text
+        input(type="email", name="userEmail", placeholder="E-mail*").comment-form__input.comment-form__email
       textarea(name="comment", cols="30", rows="4", placeholder="Комментарий", id="commentFormTextarea").comment-form__textarea
-      button(type="submit") Отправить
-      button(type="button") Отменить ответ
+      .row
+        button(type="submit").comment-form__input.comment-form__submit Отправить
+        button(type="button").comment-form__input.comment-form__cancel Отменить ответ
 
     .comment-section__comment-wrapper
       .comment-section__comment-body
