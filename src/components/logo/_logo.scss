@@ -1,31 +1,43 @@
 .logo {
-  width: 15rem;
+  min-width: 15rem;
+  max-width: 50%;
   height: 3.9rem;
   text-transform: uppercase;
-  padding: .5rem 0 .5rem 1rem;
-  position: relative;
   display: flex;
   align-items: center;
 
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border: 2px solid $color-second;
-    border-right: 2px solid transparent;
-    width: 7.5rem;
-    height: 3.9rem;
-  }
-
   &__text {
+    display: block;
     font-family: $font-family;
     font-size: 2.1rem;
   }
 
   &__text--colored {
     color: $color-second;
+  }
+
+  &__box {
+    height: 3.9rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__box--left {
+    min-width: 4rem;
+    border: 2px solid $color-second;
+    border-right: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 1.1rem;
+    text-align: right;
+  }
+
+  &__box--right {
+    min-width: 4rem;
+    border: 2px solid transparent;
+    border-left: none;
+    justify-content: flex-start;
+    text-align: left;
   }
 
 }
