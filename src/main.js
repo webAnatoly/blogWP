@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // получить все елементы nav-expanded-item
   const allExpanded = document.querySelectorAll('.nav-expanded-item');
   if (allExpanded !== null && allExpanded.length > 0) {
-    console.log('allExpanded', allExpanded);
     // на каждый элемент навесить обработчик клика
     Array.prototype.forEach.call(allExpanded, (btn) => {
       btn.addEventListener('click', (e) => navClickHandler(e));
